@@ -225,7 +225,7 @@ export function Menu({
       <Row>
         <Col md={16} xs={24}>
           <a className="navbar-brand" href={brand.path}>
-            <img width={brand.width} src={brand.icon} alt={brand.alt} />
+            MasivAnálisis
           </a>
           <DropdownMenu
             mode={showMenu}

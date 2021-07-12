@@ -85,7 +85,9 @@ PACKAGE_JSON_FILE = os.path.join(BASE_DIR, "static", "assets", "package.json")
 #     "type": "image/png"
 #     "rel": "icon"
 # },
-FAVICONS = [{"href": "/static/assets/images/favicon.png"}]
+FAVICONS = [
+    #{"href": "/static/assets/images/favicon.png"}
+]
 
 
 def _try_json_readversion(filepath: str) -> Optional[str]:
@@ -210,7 +212,7 @@ PROXY_FIX_CONFIG = {"x_for": 1, "x_proto": 1, "x_host": 1, "x_port": 1, "x_prefi
 # GLOBALS FOR APP Builder
 # ------------------------------
 # Uncomment to setup Your App name
-APP_NAME = "Superset"
+APP_NAME = "MasivAnálisis"
 
 # Uncomment to setup an App icon
 APP_ICON = "/static/assets/images/superset-logo-horiz.png"
@@ -262,10 +264,10 @@ AUTH_TYPE = AUTH_DB
 # AUTH_ROLE_PUBLIC = 'Public'
 
 # Will allow user self registration
-# AUTH_USER_REGISTRATION = True
+AUTH_USER_REGISTRATION = True
 
 # The default user self registration role
-# AUTH_USER_REGISTRATION_ROLE = "Public"
+AUTH_USER_REGISTRATION_ROLE = "Public"
 
 # When using LDAP Auth, setup the LDAP server
 # AUTH_LDAP_SERVER = "ldap://ldapserver.new"
@@ -287,26 +289,26 @@ PUBLIC_ROLE_LIKE: Optional[str] = None
 # Babel config for translations
 # ---------------------------------------------------
 # Setup default language
-BABEL_DEFAULT_LOCALE = "en"
+BABEL_DEFAULT_LOCALE = "es"
 # Your application default translation path
 BABEL_DEFAULT_FOLDER = "superset/translations"
 # The allowed translation for you app
 LANGUAGES = {
-    "en": {"flag": "us", "name": "English"},
     "es": {"flag": "es", "name": "Spanish"},
-    "it": {"flag": "it", "name": "Italian"},
-    "fr": {"flag": "fr", "name": "French"},
-    "zh": {"flag": "cn", "name": "Chinese"},
-    "ja": {"flag": "jp", "name": "Japanese"},
-    "de": {"flag": "de", "name": "German"},
-    "pt": {"flag": "pt", "name": "Portuguese"},
-    "pt_BR": {"flag": "br", "name": "Brazilian Portuguese"},
-    "ru": {"flag": "ru", "name": "Russian"},
-    "ko": {"flag": "kr", "name": "Korean"},
+    "en": {"flag": "us", "name": "English"},
+    #"it": {"flag": "it", "name": "Italian"},
+    #"fr": {"flag": "fr", "name": "French"},
+    #"zh": {"flag": "cn", "name": "Chinese"},
+    #"ja": {"flag": "jp", "name": "Japanese"},
+    #"de": {"flag": "de", "name": "German"},
+    #"pt": {"flag": "pt", "name": "Portuguese"},
+    #"pt_BR": {"flag": "br", "name": "Brazilian Portuguese"},
+    #"ru": {"flag": "ru", "name": "Russian"},
+    #"ko": {"flag": "kr", "name": "Korean"},
 }
 # Turning off i18n by default as translation in most languages are
 # incomplete and not well maintained.
-LANGUAGES = {}
+#LANGUAGES = {}
 
 # ---------------------------------------------------
 # Feature flags
@@ -369,7 +371,7 @@ DEFAULT_FEATURE_FLAGS: Dict[str, bool] = {
     # by that custom datasource access. So we are assuming a default security config,
     # a custom security config could potentially give access to setting filters on
     # tables that users do not have access to.
-    "ROW_LEVEL_SECURITY": True,
+    "ROW_LEVEL_SECURITY": False,
     # Enables Alerts and reports new implementation
     "ALERT_REPORTS": False,
     # Enable experimental feature to search for other dashboards

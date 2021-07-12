@@ -57,9 +57,9 @@ const ExtraOptions = ({
       <Collapse.Panel
         header={
           <div>
-            <h4>SQL Lab</h4>
+            <h4>{t('SQL Lab')}</h4>
             <p className="helper">
-              Configure how this database will function in SQL Lab.
+              {t('Configure how this database will function in SQL Lab.')}
             </p>
           </div>
         }
@@ -172,9 +172,9 @@ const ExtraOptions = ({
       <Collapse.Panel
         header={
           <div>
-            <h4>Performance</h4>
+            <h4>{t('Performance')}</h4>
             <p className="helper">
-              Adjust settings that will impact the performance of this database.
+              {t('Adjust settings that will impact the performance of this database.')}
             </p>
           </div>
         }
@@ -222,9 +222,9 @@ const ExtraOptions = ({
       <Collapse.Panel
         header={
           <div>
-            <h4>Security</h4>
+            <h4>{t('Security')}</h4>
             <p className="helper">
-              Add connection information for other systems.
+              {t('Add connection information for other systems.')}
             </p>
           </div>
         }
@@ -278,8 +278,8 @@ const ExtraOptions = ({
       <Collapse.Panel
         header={
           <div>
-            <h4>Other</h4>
-            <p className="helper">Additional settings.</p>
+            <h4>{t('Other')}</h4>
+            <p className="helper">{t('Additional settings.')}</p>
           </div>
         }
         key="4"

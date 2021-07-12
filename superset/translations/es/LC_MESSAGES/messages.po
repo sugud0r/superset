@@ -139,7 +139,7 @@ msgstr "Alertas"
 
 #: superset/app.py:448
 msgid "Alerts & Reports"
-msgstr ""
+msgstr "Alertas y Reportes"
 
 #: superset/app.py:462
 msgid "Access requests"

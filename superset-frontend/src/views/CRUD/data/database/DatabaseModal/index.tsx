@@ -371,15 +371,15 @@ const DatabaseModal: FunctionComponent<DatabaseModalProps> = ({
         </TabHeader>
       ) : (
         <TabHeader>
-          <CreateHeaderTitle>Enter Primary Credentials</CreateHeaderTitle>
+          <CreateHeaderTitle>{t('Enter Primary Credentials')}</CreateHeaderTitle>
           <CreateHeaderSubtitle>
-            Need help? Learn how to connect your database{' '}
+            {t('Need help? Learn how to connect your database')}{' '}
             <a
               href={DOCUMENTATION_LINK}
               target="_blank"
               rel="noopener noreferrer"
             >
-              here
+              {t('here')}
             </a>
             .
           </CreateHeaderSubtitle>
@@ -414,18 +414,18 @@ const DatabaseModal: FunctionComponent<DatabaseModalProps> = ({
           )}
           <Alert
             css={(theme: SupersetTheme) => antDAlertStyles(theme)}
-            message="Additional fields may be required"
+            message={t('Additional fields may be required')}
             description={
               <>
-                Select databases require additional fields to be completed in
-                the Advanced tab to successfully connect the database. Learn
-                what requirements your databases has{' '}
+                {('Select databases require additional fields to be completed in' +
+                ' the Advanced tab to successfully connect the database. Learn' +
+                ' what requirements your databases has')}{' '}
                 <a
                   href={DOCUMENTATION_LINK}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  here
+                  {t('here')}
                 </a>
                 .
               </>

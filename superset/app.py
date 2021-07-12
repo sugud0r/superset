@@ -232,38 +232,39 @@ class SupersetAppInitializer:
             href="/superset/welcome/",
             cond=lambda: bool(appbuilder.app.config["LOGO_TARGET_PATH"]),
         )
-        appbuilder.add_view(
+        """ appbuilder.add_view(
             AnnotationLayerModelView,
             "Annotation Layers",
-            label=__("Annotation Layers"),
+            label=__("Capas de Anotación"),
             icon="fa-comment",
             category="Manage",
-            category_label=__("Manage"),
+            category_label=__("Gestión"),
             category_icon="",
-        )
+        ) """
         appbuilder.add_view(
             DatabaseView,
             "Databases",
-            label=__("Databases"),
+            label=__("Base de datos"),
             icon="fa-database",
             category="Data",
-            category_label=__("Data"),
+            category_label=__("Datos"),
             category_icon="fa-database",
         )
         appbuilder.add_link(
             "Datasets",
-            label=__("Datasets"),
+            label=__("Conjunto de datos"),
             href="/tablemodelview/list/",
             icon="fa-table",
             category="Data",
-            category_label=__("Data"),
+            category_label=__("Datos"),
             category_icon="fa-table",
         )
         appbuilder.add_separator("Data")
         appbuilder.add_view(
             SliceModelView,
             "Charts",
-            label=__("Charts"),
+            #label=__("Charts"),
+            label=__("Gráficos"),
             icon="fa-bar-chart",
             category="",
             category_icon="",
@@ -271,7 +272,8 @@ class SupersetAppInitializer:
         appbuilder.add_view(
             DashboardModelView,
             "Dashboards",
-            label=__("Dashboards"),
+            #label=__("Dashboards"),
+            label=__("Tableros"),
             icon="fa-dashboard",
             category="",
             category_icon="",
@@ -281,7 +283,7 @@ class SupersetAppInitializer:
             "Plugins",
             label=__("Plugins"),
             category="Manage",
-            category_label=__("Manage"),
+            category_label=__("Gestión"),
             icon="fa-puzzle-piece",
             menu_cond=lambda: feature_flag_manager.is_feature_enabled(
                 "DYNAMIC_PLUGINS"
@@ -290,10 +292,10 @@ class SupersetAppInitializer:
         appbuilder.add_view(
             CssTemplateModelView,
             "CSS Templates",
-            label=__("CSS Templates"),
+            label=__("Plantillas CSS"),
             icon="fa-css3",
             category="Manage",
-            category_label=__("Manage"),
+            category_label=__("Gestión"),
             category_icon="",
         )
         appbuilder.add_view(
@@ -342,43 +344,44 @@ class SupersetAppInitializer:
             href="/superset/import_dashboards/",
             icon="fa-cloud-upload",
             category="Manage",
-            category_label=__("Manage"),
+            category_label=__("Gestión"),
             category_icon="fa-wrench",
             cond=lambda: not feature_flag_manager.is_feature_enabled(
                 "VERSIONED_EXPORT"
             ),
         )
         appbuilder.add_link(
-            "SQL Editor",
-            label=_("SQL Editor"),
+            __("SQL Editor"),
+            label=_("Editor SQL"),
             href="/superset/sqllab/",
             category_icon="fa-flask",
             icon="fa-flask",
             category="SQL Lab",
-            category_label=__("SQL Lab"),
+            category_label=__("Visor SQL"),
         )
         appbuilder.add_link(
-            __("Saved Queries"),
+            __("Consultas guardados"),
             href="/savedqueryview/list/",
             icon="fa-save",
             category="SQL Lab",
+             category_label=__("Visor SQL"),
         )
         appbuilder.add_link(
-            "Query Search",
-            label=_("Query History"),
+            __("Query Search"),
+            label=_("Historial de Consultas"),
             href="/superset/sqllab/history/",
             icon="fa-search",
             category_icon="fa-flask",
             category="SQL Lab",
-            category_label=__("SQL Lab"),
+            category_label=__("Visor SQL"),
         )
         appbuilder.add_link(
-            "Upload a CSV",
-            label=__("Upload a CSV"),
+            __("Upload a CSV"),
+            label=__("Cargar archivo CSV"),
             href="/csvtodatabaseview/form",
             icon="fa-upload",
             category="Data",
-            category_label=__("Data"),
+            category_label=__("Datos"),
             category_icon="fa-wrench",
             cond=lambda: bool(
                 self.config["CSV_EXTENSIONS"].intersection(
@@ -392,11 +395,11 @@ class SupersetAppInitializer:
 
             appbuilder.add_link(
                 "Upload Excel",
-                label=__("Upload Excel"),
+                label=__("Cargar archivo EXCEL"),
                 href="/exceltodatabaseview/form",
                 icon="fa-upload",
                 category="Data",
-                category_label=__("Data"),
+                category_label=__("Datos"),
                 category_icon="fa-wrench",
                 cond=lambda: bool(
                     self.config["EXCEL_EXTENSIONS"].intersection(
@@ -411,7 +414,7 @@ class SupersetAppInitializer:
         appbuilder.add_view(
             LogModelView,
             "Action Log",
-            label=__("Action Log"),
+            label=__("Registro de Acciones"),
             category="Security",
             category_label=__("Security"),
             icon="fa-list-ol",
@@ -438,7 +441,7 @@ class SupersetAppInitializer:
             "Dashboard Email Schedules",
             label=__("Dashboard Emails"),
             category="Manage",
-            category_label=__("Manage"),
+            category_label=__("Gestión"),
             icon="fa-search",
             menu_cond=lambda: self.config["ENABLE_SCHEDULED_EMAIL_REPORTS"],
         )
@@ -447,7 +450,7 @@ class SupersetAppInitializer:
             "Chart Emails",
             label=__("Chart Email Schedules"),
             category="Manage",
-            category_label=__("Manage"),
+            category_label=__("Gestión"),
             icon="fa-search",
             menu_cond=lambda: self.config["ENABLE_SCHEDULED_EMAIL_REPORTS"],
         )
@@ -460,9 +463,9 @@ class SupersetAppInitializer:
         appbuilder.add_view(
             AlertModelView,
             "Alerts",
-            label=__("Alerts"),
+            label=__("Alertas"),
             category="Manage",
-            category_label=__("Manage"),
+            category_label=__("Gestión"),
             icon="fa-exclamation-triangle",
             menu_cond=lambda: bool(self.config["ENABLE_ALERTS"]),
         )
@@ -472,9 +475,9 @@ class SupersetAppInitializer:
         appbuilder.add_view(
             AlertView,
             "Alerts & Report",
-            label=__("Alerts & Reports"),
+            label=__("Alertas y Reportes"),
             category="Manage",
-            category_label=__("Manage"),
+            category_label=__("Gestión"),
             icon="fa-exclamation-triangle",
             menu_cond=lambda: feature_flag_manager.is_feature_enabled("ALERT_REPORTS"),
         )
@@ -501,7 +504,7 @@ class SupersetAppInitializer:
             "Druid Datasources",
             label=__("Druid Datasources"),
             category="Data",
-            category_label=__("Data"),
+            category_label=__("Datos"),
             icon="fa-cube",
             menu_cond=lambda: bool(self.config["DRUID_IS_ACTIVE"]),
         )
@@ -511,7 +514,7 @@ class SupersetAppInitializer:
             label=__("Druid Clusters"),
             icon="fa-cubes",
             category="Data",
-            category_label=__("Data"),
+            category_label=__("Datos"),
             category_icon="fa-database",
             menu_cond=lambda: bool(self.config["DRUID_IS_ACTIVE"]),
         )
@@ -524,7 +527,7 @@ class SupersetAppInitializer:
             label=__("Scan New Datasources"),
             href="/druid/scan_new_datasources/",
             category="Data",
-            category_label=__("Data"),
+            category_label=__("Datos"),
             category_icon="fa-database",
             icon="fa-refresh",
             cond=lambda: bool(
@@ -537,7 +540,7 @@ class SupersetAppInitializer:
             label=__("Refresh Druid Metadata"),
             href="/druid/refresh_datasources/",
             category="Data",
-            category_label=__("Data"),
+            category_label=__("Datos"),
             category_icon="fa-database",
             icon="fa-cog",
             cond=lambda: bool(

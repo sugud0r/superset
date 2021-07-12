@@ -7,21 +7,49 @@
         "plural_forms": "nplurals=2; plural=(n != 1)",
         "lang": "es"
       },
+      "Connect a database": ["Conectar Base de Datos"],
+      "Edit a database": ["Editar Base de Datos"],
+      "Enter Primary Credentials": ["Configurar credenciales"],
+      "Need help? Learn how to connect your database": ["¿Necesitas ayuda? Aprende cómo conectar tu Base de Datos"],
+      "Display Name": ["Nombre a mostrar"],
+      "Pick a name to help you identify this database.": ["Selecciona un nombre que te pueda ayudar a identificar tu Base de Datos"],
+      "here": ["aquí"],
+      "Add connection information for other systems.": ["Añadir información de conexión para otros sistemas"],
+      "Adjust settings that will impact the performance of this database.": ["Ajustar opciones que puedan modificar el desempeño de esta Base de Dato"],
+      "Configure how this database will function in SQL Lab.": ["Configurar cómo esta Base de Datos se comportará en el Visor SQL."],
+      "Other": ["Otros"],
+      "Additional settings.": ["Ajustes adicionales"],
+      "Additional fields may be required": ["Campos adicionales pueden ser requeridos"],
+      "Select databases require additional fields to be completed in the Advanced tab to successfully connect the database. Learn what requirements your databases has": ["Las bases de datos seleccionadas requieren que se completen campos adicionales en la pestaña Avanzado para conectar correctamente la base de datos. Conozca qué requisitos tienen sus bases de datos"],
+      "Query Mode": "Tipo de Consulta",
+      "Connect": ["Conectar"],
+      "Raw Records": ["Datos puros"],
+      "Aggregate": ["Agregacion"],
+      "Include Time": ["Incluir Tiempo"],
+      "Show totals": ["Mostrar totales"],
+      "Controls labeled ": ["Etiquetas de Control "],
+      "Control labeled ": ["Etiqueta de Control "],
+      "Sort By": ["Ordenar por"],
+      "Copy dashboard URL": ["Copiar URL del Tablero"],
+      "Share dashboard by email": ["Compartir Tablero por Email"],
+      "Percentage Metrics": ["Métricas percentiles"],
+      "[ untitled dashboard ]": ["[ tablero sin nombre ]"],
+      "Enter fullscreen": ["Activar pantalla completa"],
       "Home": [""],
       "Annotation Layers": ["Capas de Anotación"],
       "Manage": ["Administrar"],
       "Databases": ["Bases de datos"],
       "Data": ["Datos"],
-      "Datasets": [""],
+      "Datasets": ["Conjunto de Datos"],
       "Charts": ["Gráficos"],
-      "Dashboards": ["Dashboards"],
+      "Dashboards": ["Tableros"],
       "Plugins": [""],
       "CSS Templates": ["Plantillas CSS"],
       "Row level security": ["Filtros de seguridad a nivel de linea"],
       "Security": ["Seguridad"],
       "Import Dashboards": ["Importar Dashboards"],
       "SQL Editor": ["Editor SQL"],
-      "SQL Lab": ["Laboratorio SQL"],
+      "SQL Lab": ["Visor SQL"],
       "Saved Queries": ["Consultas Guardadas"],
       "Query History": ["Historial de la Consulta"],
       "Upload a CSV": ["Subir un CSV"],
@@ -30,14 +58,14 @@
       "Dashboard Emails": ["Programar Dashboard"],
       "Chart Email Schedules": ["Programar Gráfico"],
       "Alerts": ["Alertas"],
-      "Alerts & Reports": [""],
+      "Alerts & Reports": ["Alertas y Reportes"],
       "Access requests": ["Solicitudes de Acceso"],
       "Druid Datasources": ["Fuentes de Datos Druid"],
       "Druid Clusters": ["Clusters Druid"],
       "Scan New Datasources": ["Buscar Nuevas Fuentes de Datos"],
       "Refresh Druid Metadata": ["Actualizar Metadatos Druid"],
-      "Issue 1000 - The datasource is too large to query.": [""],
-      "Issue 1001 - The database is under an unusual load.": [""],
+      "Issue 1000 - The datasource is too large to query.": ["Issue 1000 - La fuente de los datos es muy grande para consultar."],
+      "Issue 1001 - The database is under an unusual load.": ["Issue 1001 - La base de datos se encuentra bajo una carga ."],
       "Issue 1002 - The database returned an unexpected error.": [""],
       "Issue 1003 - There is a syntax error in the SQL query. Perhaps there was a misspelling or a typo.": [
         ""
@@ -315,7 +343,7 @@
       "Cache Timeout": ["Tiempo de espera de caché"],
       "Metadata Last Refreshed": [""],
       "Duration (in seconds) of the caching timeout for this cluster. A timeout of 0 indicates that the cache never expires. Note this defaults to the global timeout if undefined.": [
-        ""
+        "Duración (en segundos) del tiempo de espera de almacenamiento en caché para los gráficos de esta base de datos. Un tiempo de espera de 0 indica que la caché nunca caduca. Tenga en cuenta que este valor predeterminado es el tiempo de espera global si no está definido."
       ],
       "Druid supports basic authentication. See [auth](http://druid.io/docs/latest/design/auth.html) and druid-basic-security extension": [
         ""
@@ -950,23 +978,23 @@
       ],
       "Expose in SQL Lab": ["Mostrar en el laboratorio SQL"],
       "Allow CREATE TABLE AS": ["Permitir CREATE TABLE AS"],
-      "Allow CREATE VIEW AS": [""],
+      "Allow CREATE VIEW AS": ["Permitir CREATE VIEW AS"],
       "Allow DML": ["Permitir DML"],
       "CTAS Schema": ["Esquema CTAS"],
       "SQLAlchemy URI": ["URI SQLAlchemy"],
       "Chart Cache Timeout": [""],
       "Secure Extra": [""],
-      "Root certificate": [""],
-      "Async Execution": [""],
+      "Root certificate": ["Certificado Root"],
+      "Async Execution": ["Ejecución asíncrona"],
       "Impersonate the logged on user": [""],
-      "Allow Csv Upload": [""],
+      "Allow Csv Upload": ["Permitir carga de archivos CSV"],
       "Allow Multi Schema Metadata Fetch": [""],
       "Backend": [""],
       "Extra field cannot be decoded by JSON. %(msg)s": [""],
       "Invalid connection string, a valid string usually follows:'DRIVER://USER:PASSWORD@DB-HOST/DATABASE-NAME'<p>Example:'postgresql://user:password@your-postgres-db/database'</p>": [
         ""
       ],
-      "CSV to Database configuration": [""],
+      "CSV to Database configuration": ["Configuración de carga de archivo CSV"],
       "Database \"%(database_name)s\" schema \"%(schema_name)s\" is not allowed for csv uploads. Please contact your Superset Admin.": [
         ""
       ],
@@ -992,10 +1020,10 @@
       "Excel file \"%(excel_filename)s\" uploaded to table \"%(table_name)s\" in database \"%(db_name)s\"": [
         ""
       ],
-      "Logs": [""],
-      "Show Log": [""],
-      "Add Log": [""],
-      "Edit Log": [""],
+      "Logs": ["Registros"],
+      "Show Log": ["Ver registro"],
+      "Add Log": ["Añadir registro"],
+      "Edit Log": ["Editar registro"],
       "Action": ["Acción"],
       "dttm": ["dttm"],
       "Add item": ["Filtros"],
@@ -1151,7 +1179,7 @@
       "Schedule": [""],
       "There was an error with your request": [""],
       "Please save the query to enable sharing": [""],
-      "Copy link": [""],
+      "Copy link": ["Copiar Enlace"],
       "Copy query link to your clipboard": [
         "Copiar consulta de partición al portapapeles"
       ],
@@ -1311,7 +1339,7 @@
       "Force refresh schema list": [""],
       "Select a schema (%s)": ["Selecciona un esquema (%s)"],
       "Schema:": ["Esquema:"],
-      "datasource": [""],
+      "datasource": ["Fuente de datos"],
       "schema": [""],
       "delete": [""],
       "Type \"%s\" to confirm": [""],
@@ -1328,11 +1356,11 @@
       "Error while fetching table list": [
         "Error recuperando la lista de tablas"
       ],
-      "Select table or type table name": [""],
+      "Select table or type table name": ["Seleccionar tabla o escribe el nombre de la misma"],
       "Type to search ...": ["Escribe para buscar ..."],
       "Select table ": [""],
       "Force refresh table list": [""],
-      "See table schema": [""],
+      "See table schema": ["Ver esquema de tabla"],
       "%s%s": [""],
       "Share dashboard": ["Compartir dashboard"],
       "This may be triggered by:": [""],
@@ -1363,9 +1391,9 @@
       "Last Updated %s": [""],
       "%s Selected": [""],
       "Deselect all": ["¿Realmente quieres borrar todo?"],
-      "%s-%s of %s": [""],
+      "%s-%s of %s": ["%s-%s de %s"],
       "Settings": ["Configuracion"],
-      "About": [""],
+      "About": ["Información"],
       "SQL query": ["Parar query"],
       "There is not enough space for this component. Try decreasing its width, or increasing the destination width.": [
         ""
@@ -1399,27 +1427,27 @@
         ""
       ],
       "Your dashboard is too large. Please reduce the size before save it.": [
-        "Tu dashboard es demasiado grande, Por favor reduce el tamaño antes de guardar"
+        "Tu tablero es demasiado grande, Por favor reduce el tamaño antes de guardar"
       ],
       "Discard changes": ["Descartar cambios"],
       "An error occurred while fetching available CSS templates": [
         "Ha ocurrido un error cargando los CSS disponibles"
       ],
-      "Superset dashboard": ["Dashboard Superset"],
+      "Superset dashboard": ["Tablero Superset"],
       "Check out this dashboard: ": [""],
-      "Refresh dashboard": ["Auto actualizar el dashboard"],
+      "Refresh dashboard": ["Auto actualizar el Tablero"],
       "Set auto-refresh interval": [
-        "Configurar el intervalo de actualización del dashboard"
+        "Configurar el intervalo de actualización del Tablero"
       ],
       "Set filter mapping": [""],
-      "Edit dashboard properties": ["Editar las propiedades del dashboard"],
+      "Edit dashboard properties": ["Editar las propiedades del tablero"],
       "Edit CSS": ["Editar el CSS"],
       "Download as image": ["Descargar como imagen"],
       "Toggle fullscreen": [""],
       "There is no chart definition associated with this component, could it have been deleted?": [
-        ""
+        "No hay algún gráfico asociado con este componente, ¿podría haberse eliminado?"
       ],
-      "Delete this container and save to remove this message.": [""],
+      "Delete this container and save to remove this message.": ["Elimine este contenedor y guarde el tablero para eliminar este mensaje."],
       "An error has occurred": ["Ha ocurrido un error"],
       "You do not have permission to edit this dashboard": [
         "No tienes permiso para acceder a la(s) fuente(s) de datos: %(name)s."
@@ -1476,13 +1504,14 @@
       "Annotation layers are still loading.": [""],
       "One ore more annotation layers failed loading.": [""],
       "Cached %s": [""],
-      "Fetched %s": [""],
+      "Fetched %s": ["Actualizado %s"],
       "Minimize chart": ["Minimizar"],
       "Maximize chart": ["Maximizar"],
       "Force refresh": ["Forzar actualización"],
       "Toggle chart description": ["Alternar la descripción del Dashboard"],
-      "View chart in Explore": [""],
+      "View chart in Explore": ["Visualizar gráfica en Explorador"],
       "Share chart": ["Compartir gráfico"],
+      "Share chart by email": ["Compartir gráfico por URL"],
       "Export CSV": ["Exportar CSV"],
       "Applied Filters (%d)": [""],
       "Incompatible Filters (%d)": [""],
@@ -1500,7 +1529,7 @@
         ""
       ],
       "Delete dashboard tab?": ["¿Quieres eliminar la pestaña del dashboard?"],
-      "Divider": [""],
+      "Divider": ["Divisor"],
       "Header": ["Cabezera"],
       "Row": ["Fila"],
       "Tabs": ["Pestaña"],
@@ -1614,7 +1643,7 @@
       "Source": [""],
       "Sync columns from source": ["Sincronizar las columnas desde la fuente"],
       "Calculated columns": ["Columnas calculadas"],
-      "The dataset has been saved": [""],
+      "The dataset has been saved": ["El conjunto de datos ha sido agregado"],
       "The dataset configuration exposed here\n                affects all the charts using this dataset.\n                Be mindful that changing settings\n                here may affect other charts\n                in undesirable ways.": [
         ""
       ],
@@ -1708,11 +1737,11 @@
       "Sorry, An error occurred": ["Lo siento, ha ocurrido un error"],
       "No data": ["No hay datos"],
       "View samples": ["Ver ejemplos"],
-      "Search Metrics & Columns": [""],
-      "Showing %s of %s": [""],
+      "Search Metrics & Columns": ["Buscar Métricas y Columnas"],
+      "Showing %s of %s": ["Mostrando %s de %s"],
       "New chart": ["gráfico"],
       "Edit properties": ["Editar propiedades"],
-      "View query": ["Ver querie"],
+      "View query": ["Ver consulta"],
       "Run in SQL Lab": ["Ejecutar en Laboratiorio SQL"],
       "Height": ["Altura"],
       "Width": ["Anchura"],
@@ -1720,7 +1749,6 @@
       "Export to .csv format": ["Exportar a .csv"],
       "%s - untitled": ["%s - sin título"],
       "Edit chart properties": [""],
-      "Control labeled ": [""],
       "Open Datasource tab": ["Nombre de la Fuente de Datos"],
       "You do not have permission to edit this chart": [
         "No tienes permiso para aprobar esta solicitud."
@@ -1833,7 +1861,7 @@
         ""
       ],
       "%s column(s) and metric(s)": [""],
-      "%s column(s)": [""],
+      "%s column(s)": ["%s columna(s)"],
       "To filter on a metric, use Custom SQL tab.": [""],
       "%s operator(s)": [""],
       "Type a value here": [""],
@@ -1844,7 +1872,7 @@
       "\n                This filter was inherited from the dashboard's context.\n                It won't be saved when saving the chart.\n              ": [
         ""
       ],
-      "%s aggregates(s)": [""],
+      "%s aggregates(s)": ["%s agregacion(es)"],
       "%s saved metric(s)": [""],
       "Saved": ["Guardar"],
       "Saved metric": ["Consultas Guardadas"],
@@ -1946,7 +1974,7 @@
       "Notification method": ["Capas de Anotación"],
       "Execution log": ["Registro Acciones"],
       "Actions": [""],
-      "Bulk select": [""],
+      "Bulk select": ["Selección masiva"],
       "No %s yet": [""],
       "Created by": ["Creado el"],
       "An error occurred while fetching created by values: %s": [
@@ -2118,36 +2146,36 @@
       "An error occurred while fetching database related data: %s": [
         "Ha ocurrido un error cargando los CSS disponibles"
       ],
-      "Asynchronous query execution": [""],
+      "Asynchronous query execution": ["Ejecución asíncrona de consultas"],
       "AQE": [""],
       "Allow data manipulation language": [""],
       "DML": [""],
-      "CSV upload": [""],
+      "CSV upload": ["Carga archivo CSV"],
       "Delete database": ["Selecciona una base de datos"],
       "The database %s is linked to %s charts that appear on %s dashboards. Are you sure you want to continue? Deleting the database will break those objects.": [
         ""
       ],
-      "Delete Database?": ["Selecciona una base de datos"],
+      "Delete Database?": ["¿Borrar Base de Datos?"],
       "Please enter a SQLAlchemy URI to test": [
         "Por favor introduce un nombre para el gráfico"
       ],
-      "Connection looks good!": [""],
-      "ERROR: Connection failed. ": [""],
-      "Sorry there was an error fetching database information: %s": [""],
+      "Connection looks good!": ["¡La conexión es correcta!"],
+      "ERROR: Connection failed. ": ["ERROR: Conexión fallida. "],
+      "Sorry there was an error fetching database information: %s": ["Lo sentimos, hubo un error mientras se obtenía la información de la Base de Datos: %s"],
       "Edit database": ["Editar Base de Datos"],
       "Add database": ["Añadir Base de Datos"],
       "Connection": ["Probar Conexión"],
       "Database name": ["Nombre de la Fuente de Datos"],
-      "Name your dataset": [""],
+      "Name your dataset": ["Añade un nombre a tu conjunto de Datos"],
       "dialect+driver://username:password@host:port/database": [""],
       "Test connection": ["Probar Conexión"],
-      "Refer to the ": [""],
-      "SQLAlchemy docs": ["URI SQLAlchemy"],
-      " for more information on how to structure your URI.": [""],
-      "Performance": [""],
+      "Refer to the": ["Mira la"],
+      "SQLAlchemy docs": ["Documentación de SQLAlchemy"],
+      "for more information on how to structure your URI.": ["Para más información sobre cómo estructurar tu URI."],
+      "Performance": ["Desempeño"],
       "Chart cache timeout": ["Tiempo de espera de caché"],
       "Operate the database in asynchronous mode, meaning that the queries are executed on remote workers as opposed to on the web server itself. This assumes that you have a Celery worker setup as well as a results backend. Refer to the installation docs for more information.": [
-        ""
+        "Opere la base de datos en modo asíncrono, lo que significa que las consultas se ejecutan en trabajadores remotos en lugar de hacerlo en el propio servidor web. Esto supone que tiene una configuración de trabajador de Apio, así como un backend de resultados. Consulte los documentos de instalación para obtener más información."
       ],
       "SQL Lab settings": ["Configuracion"],
       "Allow users to run non-SELECT statements (UPDATE, DELETE, CREATE, ...)": [
@@ -2159,36 +2187,36 @@
         "Cuando se permite la opción CREATE TABLE AS en el laboratorio SQL, esta opción hace que la tabla se cree en este esquema"
       ],
       "Secure extra": ["Seguridad"],
-      "JSON string containing additional connection configuration.": [""],
+      "JSON string containing additional connection configuration.": ["Cadena JSON que contiene configuración de conexión adicional."],
       "This is used to provide connection information for systems like Hive, Presto, and BigQuery, which do not conform to the username:password syntax normally used by SQLAlchemy.": [
-        ""
+        "Se utiliza para proporcionar información de conexión para sistemas como Hive, Presto y BigQuery, que no se ajustan a la sintaxis de nombre de usuario: contraseña que normalmente usa SQLAlchemy."
       ],
       "Optional CA_BUNDLE contents to validate HTTPS requests. Only available on certain database engines.": [
-        ""
+        "Contenidos CA_BUNDLE opcionales para validar solicitudes HTTPS. Solo disponible en determinados motores de base de datos."
       ],
-      "Impersonate Logged In User (Presto & Hive)": [""],
-      "If Presto, all the queries in SQL Lab are going to be executed as the currently logged on user who must have permission to run them. If Hive and hive.server2.enable.doAs is enabled, will run the queries as service account, but impersonate the currently logged on user via hive.server2.proxy.user property.": [
-        ""
+      "Impersonate Logged In User (Presto, Trino, Hive, and GSheets)": ["Hacerse pasar por un usuario conectado (Presto, Trino, Hive, and GSheets)"],
+      "If Presto or Trino, all the queries in SQL Lab are going to be executed as the currently logged on user who must have permission to run them. If Hive and hive.server2.enable.doAs is enabled, will run the queries as service account, but impersonate the currently logged on user via hive.server2.proxy.user property.": [
+        "Si es Presto o Trino, todas las consultas en el Visor SQL se ejecutarán como el usuario actualmente conectado que debe tener permiso para ejecutarlas. Si Hive y hive.server2.enable.doAs están habilitados, ejecutará las consultas como cuenta de servicio, pero suplantará al usuario que ha iniciado sesión actualmente a través de la propiedad hive.server2.proxy.user."
       ],
-      "Allow data upload": [""],
+      "Allow data upload": ["Permitir carga de Datos"],
       "If selected, please set the schemas allowed for data upload in Extra.": [
-        ""
+        "Si selecciona, por favor suministre los esquemas permitidos para la carga de datos en el campo Extra."
       ],
-      "JSON string containing extra configuration elements.": [""],
+      "JSON string containing extra configuration elements.": ["Cadena JSON que contiene elementos de configuración extra"],
       "1. The engine_params object gets unpacked into the sqlalchemy.create_engine call, while the metadata_params gets unpacked into the sqlalchemy.MetaData call.": [
-        ""
+        "1. El objeto engine_params se descomprime en la llamada sqlalchemy.create_engine, mientras que metadata_params se descomprime en la llamada sqlalchemy.MetaData."
       ],
       "2. The metadata_cache_timeout is a cache timeout setting in seconds for metadata fetch of this database. Specify it as \"metadata_cache_timeout\": {\"schema_cache_timeout\": 600, \"table_cache_timeout\": 600}. If unset, cache will not be enabled for the functionality. A timeout of 0 indicates that the cache never expires.": [
-        ""
+        "2. metadata_cache_timeout es una configuración de tiempo de espera de caché en segundos para la recuperación de metadatos de esta base de datos. Especifíquelo como \"metadata_cache_timeout \": {\"schema_cache_timeout \": 600, \"table_cache_timeout \": 600}. Si no se configura, la memoria caché no se habilitará para la funcionalidad. Un tiempo de espera de 0 indica que la caché nunca caduca."
       ],
       "3. The schemas_allowed_for_csv_upload is a comma separated list of schemas that CSVs are allowed to upload to. Specify it as \"schemas_allowed_for_csv_upload\": [\"public\", \"csv_upload\"]. If database flavor does not support schema or any schema is allowed to be accessed, just leave the list empty.": [
-        ""
+        "3. schemas_allowed_for_csv_upload es una lista de esquemas separados por comas en los que los CSV pueden cargar. Especifíquelo como \"schemas_allowed_for_csv_upload \": [\"public \", \"csv_upload \"]. Si el tipo de base de datos no admite el esquema o se permite el acceso a cualquier esquema, simplemente deje la lista vacía."
       ],
       "4. The version field is a string specifying this db's version. This should be used with Presto DBs so that the syntax is correct.": [
-        ""
+        "4. El campo de versión es una cadena que especifica la versión de esta base de datos. Esto debe usarse con Presto DB para que la sintaxis sea correcta."
       ],
       "5. The allows_virtual_table_explore field is a boolean specifying whether or not the Explore button in SQL Lab results is shown.": [
-        ""
+        "5. El campo allow_virtual_table_explore es un booleano que especifica si se muestra o no el botón Explorar en los resultados de SQL Lab."
       ],
       "Error while saving dataset: %s": [
         "Error recuperando la lista de bases de datos"
@@ -2219,22 +2247,22 @@
       "The dataset %s is linked to %s charts that appear on %s dashboards. Are you sure you want to continue? Deleting the dataset will break those objects.": [
         ""
       ],
-      "Delete Dataset?": [""],
+      "Delete Dataset?": ["¿Eliminar conjunto de datos?"],
       "Are you sure you want to delete the selected datasets?": [""],
       "0 Selected": ["Selecciona ..."],
       "%s Selected (Virtual)": [""],
       "%s Selected (Physical)": [""],
       "%s Selected (%s Physical, %s Virtual)": [""],
       "There was an issue previewing the selected query. %s": [""],
-      "Success": [""],
-      "Failed": [""],
-      "Running": [""],
+      "Success": ["Exitoso"],
+      "Failed": ["Fallido"],
+      "Running": ["Ejecutándose"],
       "Offline": [""],
-      "Scheduled": [""],
-      "Duration: %s": [""],
+      "Scheduled": ["Agendado"],
+      "Duration: %s": ["Duración: %s"],
       "Tab name": ["Nombre Tabla"],
-      "TABLES": [""],
-      "Rows": [""],
+      "TABLES": ["TABLAS"],
+      "Rows": ["Filas"],
       "Open query in SQL Lab": ["Ejecutar en Laboratiorio SQL"],
       "An error occurred while fetching database values: %s": [
         "Ha ocurrido un error cargando los CSS disponibles"
@@ -2252,6 +2280,7 @@
       "There was an issue deleting the selected queries: %s": [""],
       "Edit query": ["¿Consulta vacía?"],
       "Copy query URL": ["Parar query"],
+      "Copy chart URL": ["Copiar URL del gráfico"],
       "Delete query": ["Eliminar"],
       "This action will permanently delete the saved query.": [""],
       "Delete Query?": ["¿Realmente quieres borrar todo?"],
@@ -2279,7 +2308,7 @@
       "${tableName\n                        .split('')\n                        .slice(0, tableName.length - 1)\n                        .join('')}\n                    ": [
         ""
       ],
-      "You don't have any favorites yet!": [""],
+      "You don't have any favorites yet!": ["¡No tines nigún favorito aún!"],
       "SQL Lab queries": ["Vista de Laboratorio SQL"],
       "${tableName}": ["Nombre Tabla"],
       "query": ["Consulta"],

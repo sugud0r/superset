@@ -86,16 +86,22 @@ class ImportExamplesCommand(ImportModelsCommand):
                 database_ids[str(database.uuid)] = database.id
 
         # import datasets
-        # TODO (betodealmeida): once we have all examples being imported we can
-        # have a stable UUID for the database stored in the dataset YAML; for
-        # now we need to fetch the current ID.
-        examples_id = (
-            db.session.query(Database).filter_by(database_name="examples").one().id
-        )
         dataset_info: Dict[str, Dict[str, Any]] = {}
         for file_name, config in configs.items():
             if file_name.startswith("datasets/"):
-                config["database_id"] = examples_id
+                if config["database_uuid"] not in database_ids:
+                    # If database_uuid is not in the list of UUIDs it means that
+                    # the examples database was created before its UUID was frozen,
+                    # so it has a random UUID. We need to determine its ID so
+                    # we can point the dataset to it.
+                    config["database_id"] = (
+                        db.session.query(Database)
+                        .filter_by(database_name="examples")
+                        .one()
+                        .id
+                    )
+                else:
+                    config["database_id"] = database_ids[config["database_uuid"]]
                 dataset = import_dataset(
                     session, config, overwrite=overwrite, force_data=force_data
                 )

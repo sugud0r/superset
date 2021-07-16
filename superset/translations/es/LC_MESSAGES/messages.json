@@ -35,7 +35,9 @@
       "Percentage Metrics": ["Métricas percentiles"],
       "[ untitled dashboard ]": ["[ tablero sin nombre ]"],
       "Enter fullscreen": ["Activar pantalla completa"],
-      "Home": [""],
+      "Home": ["Inicio"],
+      "No Data": ["No hay datos"],
+      "View All": ["Ver Todos"],
       "Annotation Layers": ["Capas de Anotación"],
       "Manage": ["Administrar"],
       "Databases": ["Bases de datos"],
@@ -43,7 +45,10 @@
       "Datasets": ["Conjunto de Datos"],
       "Charts": ["Gráficos"],
       "Dashboards": ["Tableros"],
+      "DASHBOARDS": ["TABLEROS"],
+      "CHARTS": ["GRÁFICOS"],
       "Plugins": [""],
+      "Toggle SortBy": ["Ordenar por esta columna"],
       "CSS Templates": ["Plantillas CSS"],
       "Row level security": ["Filtros de seguridad a nivel de linea"],
       "Security": ["Seguridad"],
@@ -636,13 +641,13 @@
       "\n        *%(slice_name)s*\n\n        <%(slice_url_user_friendly)s|Explore in Superset>\n        ": [
         ""
       ],
-      "[Alert] %(label)s": [""],
+      "[Alert] %(label)s": ["[Alerta] %(label)s"],
       "New": ["Nuevo"],
-      "SQL Query": [""],
+      "SQL Query": ["Consulta SQL"],
       "Chart": ["Gráfico"],
-      "Dashboard": ["Dashboard"],
+      "Dashboard": ["Tablero"],
       "Profile": ["Perfil"],
-      "Info": [""],
+      "Info": ["Información"],
       "Logout": ["Salir"],
       "Login": ["Acceder"],
       "Record Count": ["Número de Registros"],
@@ -650,18 +655,18 @@
       "Filter List": ["Filtrar lista"],
       "Search": ["Buscar"],
       "Refresh": ["Intérvalo de actualización"],
-      "Import dashboards": ["Importar dashboards"],
-      "Import Dashboard(s)": [""],
-      "File": [""],
-      "Choose File": [""],
-      "Upload": [""],
+      "Import dashboards": ["Importar tableros"],
+      "Import Dashboard(s)": ["Importar tablero(s)"],
+      "File": ["Archivo"],
+      "Choose File": ["Escoger Archivo"],
+      "Upload": ["Subir"],
       "No Access!": ["Sin Acceso!"],
       "You do not have permissions to access the datasource(s): %(name)s.": [
         "No tienes permiso para acceder a la(s) fuente(s) de datos: %(name)s."
       ],
       "Request Permissions": ["Solicitar Permisos"],
       "Cancel": ["Cancelar"],
-      "Use the edit buttom to change this field": [""],
+      "Use the edit buttom to change this field": ["Usa el botón de editar para cambiar este archivo"],
       "Test Connection": ["Probar Conexión"],
       "[Superset] Access to the datasource %(name)s was granted": [
         "Se ha otorgado Acceso [Superset] a la fuente de datos %(name)"
@@ -891,7 +896,7 @@
       "Export": ["Exportar"],
       "Export dashboards?": ["¿Exportar Dashboards?"],
       "Name of table to be created from csv data.": [""],
-      "CSV File": [""],
+      "CSV File": ["Archivo CSV"],
       "Select a CSV file to be uploaded to a database.": [""],
       "Only the following file extensions are allowed: %(allowed_extensions)s": [
         ""
@@ -1208,12 +1213,12 @@
         "Ingresa un nuevo título para la pestaña"
       ],
       "Untitled Query %s": ["Consulta sin título %s"],
-      "Close tab": [""],
-      "Rename tab": [""],
-      "Expand tool bar": [""],
-      "Hide tool bar": [""],
-      "Close all other tabs": [""],
-      "Duplicate tab": [""],
+      "Close tab": ["Cerrar pestaña"],
+      "Rename tab": ["Renombrar pestaña"],
+      "Expand tool bar": ["Expandir barra de herramientas"],
+      "Hide tool bar": ["Ocultar barra de herramientas"],
+      "Close all other tabs": ["Cerrar todas las demás pestañas"],
+      "Duplicate tab": ["Duplicar pestaña"],
       "Copy partition query to clipboard": [
         "Copiar consulta de partición al portapapeles"
       ],
@@ -1224,9 +1229,9 @@
       "Original table column order": [
         "Orden de la columna de la tabla original"
       ],
-      "Copy SELECT statement to the clipboard": [""],
-      "Show CREATE VIEW statement": [""],
-      "CREATE VIEW statement": [""],
+      "Copy SELECT statement to the clipboard": ["Copiar sentencia SELECT a portapapeles"],
+      "Show CREATE VIEW statement": ["Mostrar sentencia CREATE VIEW"],
+      "CREATE VIEW statement": ["Sentencia CREATE VIEW"],
       "Remove table preview": ["Eliminar vista previa de la tabla"],
       "Assign a set of parameters as": [""],
       "below (example:": [""],
@@ -1237,9 +1242,9 @@
       "Create a new chart": ["Crear un nuevo Gráfico"],
       "Choose a dataset": ["Selecciona una base de datos"],
       "If the dataset you are looking for is not available in the list, follow the instructions on how to add it in the Superset tutorial.": [
-        ""
+        "Si el conjunto de datos que está buscando no se encuentra disponible, sigue las instrucciones en el tutorial."
       ],
-      "Choose a visualization type": [""],
+      "Choose a visualization type": ["Escoje el tipo de visualización"],
       "Create new chart": ["Crear un nuevo Gráfico"],
       "An error occurred while loading the SQL": [""],
       "Updating chart was stopped": [
@@ -1386,6 +1391,8 @@
       "The import was successful": ["Sin éxito"],
       "OVERWRITE": [""],
       "Overwrite": [""],
+      "saved queries": ["consultas guardadas"],
+      "yet": ["aún"],
       "Import": ["Exportar"],
       "Import %s": ["Importar Dashboards"],
       "Last Updated %s": [""],
@@ -1394,7 +1401,7 @@
       "%s-%s of %s": ["%s-%s de %s"],
       "Settings": ["Configuracion"],
       "About": ["Información"],
-      "SQL query": ["Parar query"],
+      "SQL query": ["Consulta SQL"],
       "There is not enough space for this component. Try decreasing its width, or increasing the destination width.": [
         ""
       ],
@@ -1475,7 +1482,7 @@
       "This dashboard is published. Click to make it a draft.": [
         "Este dashboard es público, Haz click para hacerlo borrador"
       ],
-      "Draft": [""],
+      "Draft": ["Borrador"],
       "Don't refresh": ["No Actualizar"],
       "10 seconds": ["10 segundos"],
       "30 seconds": ["30 segundos"],
@@ -1573,7 +1580,7 @@
       "Changing the dataset may break the chart if the chart relies on columns or metadata that does not exist in the target dataset": [
         ""
       ],
-      "dataset": [""],
+      "dataset": ["conjunto de datos"],
       "Change dataset": ["Cambiar fuente"],
       "Warning!": ["Mensaje de Aviso"],
       "Search / Filter": ["Buscar / Filtrar"],
@@ -1616,8 +1623,8 @@
       "Cache timeout": ["Tiempo de espera de caché"],
       "The duration of time in seconds before the cache is invalidated": [""],
       "Hours offset": [""],
-      "Spatial": [""],
-      "virtual": [""],
+      "Spatial": ["Espacial"],
+      "virtual": ["Virtual"],
       "Dataset name": ["Nombre de la Fuente de Datos"],
       "When specifying SQL, the datasource acts as a view. Superset will use this statement as a subquery while grouping and filtering on the generated parent queries.": [
         ""
@@ -1632,15 +1639,15 @@
       "D3 format": ["Formato D3"],
       "Warning message": ["Mensaje de Aviso"],
       "Warning message to display in the metric selector": [""],
-      "Certified by": [""],
+      "Certified by": ["Certificado por"],
       "Person or group that has certified this metric": [""],
-      "Certification details": [""],
-      "Details of the certification": [""],
-      "Be careful.": [""],
+      "Certification details": ["Detalles de certificación"],
+      "Details of the certification": ["Detalles de certificación"],
+      "Be careful.": ["Se cuidadoso."],
       "Changing these settings will affect all charts using this dataset, including charts owned by other people.": [
         ""
       ],
-      "Source": [""],
+      "Source": ["Fuente"],
       "Sync columns from source": ["Sincronizar las columnas desde la fuente"],
       "Calculated columns": ["Columnas calculadas"],
       "The dataset has been saved": ["El conjunto de datos ha sido agregado"],
@@ -1650,7 +1657,7 @@
       "Are you sure you want to save and apply changes?": [
         "¿Estas seguro de que quieres guardar y aplicar los cambios?"
       ],
-      "Confirm save": [""],
+      "Confirm save": ["Confirmar guardado"],
       "Edit Dataset ": ["Editar Base de Datos"],
       "Use legacy datasource editor": [""],
       "Time range": ["Periodo de tiempo"],
@@ -1666,12 +1673,12 @@
         "Uno o varios controles para agrupar por"
       ],
       "One or many metrics to display": ["Una o varias métricas para mostrar"],
-      "Dataset": [""],
+      "Dataset": ["Conjunto de datos"],
       "Visualization type": ["Tipo de Visualización"],
       "The type of visualization to display": [
         "El tipo de visualización a mostrar."
       ],
-      "Fixed color": [""],
+      "Fixed color": ["Color fijo"],
       "Use this to define a static color for all circles": [""],
       "Right axis metric": ["Métrica Eje Derecho"],
       "Choose a metric for right axis": [
@@ -1695,7 +1702,7 @@
       "The time granularity for the visualization. This applies a date transformation to alter your time column and defines a new time granularity. The options here are defined on a per database engine basis in the Superset source code.": [
         "La granularidad del tiempo para la visualización. Esto aplica una transformación de fecha para alterar tu columna de tiempo y define una nueva granularidad de tiempo. Las opciones aquí se definen en función del motor de base de datos en el código fuente de Superset."
       ],
-      "Last week": [""],
+      "Last week": ["Última semana"],
       "The time range for the visualization. All relative times, e.g. \"Last month\", \"Last 7 days\", \"now\", etc. are evaluated on the server using the server's local time (sans timezone). All tooltips and placeholder times are expressed in UTC (sans timezone). The timestamps are then evaluated by the database using the engine's local timezone. Note one can explicitly set the timezone per the ISO 8601 format if specifying either the start and/or end time.": [
         ""
       ],
@@ -1776,16 +1783,16 @@
       "Save as ...": ["Guardar como"],
       "Chart name": ["El Gráfico ha cambiado"],
       "Add to dashboard": ["Añadir a un nuevo Dashboard"],
-      "Display configuration": [""],
+      "Display configuration": ["Mostrar configuración"],
       "Configure your how you overlay is displayed here.": [""],
       "Style": [""],
       "Opacity": ["Opacidad"],
       "Color": ["Color"],
-      "Line width": [""],
+      "Line width": ["Grosor de línea"],
       "Layer configuration": ["Configuración"],
       "Configure the basics of your Annotation Layer.": [""],
-      "Mandatory": [""],
-      "Hide layer": [""],
+      "Mandatory": ["Obligatorio"],
+      "Hide layer": ["Ocultar capa"],
       "Choose the annotation layer type": ["Capas de Anotación"],
       "Annotation layer type": ["Capas de Anotación"],
       "Remove": ["Eliminar"],
@@ -1842,18 +1849,18 @@
       "Failed to verify select options: %s": [""],
       "RANGE TYPE": [""],
       "Actual time range": [""],
-      "CANCEL": [""],
-      "APPLY": [""],
+      "CANCEL": ["CANCELAR"],
+      "APPLY": ["APLICAR"],
       "Edit time range": ["Periodo de tiempo"],
       "Configure advanced time range": [""],
-      "START": [""],
-      "END": [""],
+      "START": ["INICIO"],
+      "END": ["FIN"],
       "Configure Time Range: Previous...": [""],
       "Configure Time Range: Last...": [""],
       "Configure custom time range": ["Periodo de tiempo"],
       "Relative quantity": [""],
       "Anchor to": [""],
-      "NOW": [""],
+      "NOW": ["AHORA"],
       "Date/Time": ["Hora Inicio"],
       "Simple": [""],
       "Custom SQL": ["Customizar"],
@@ -1937,32 +1944,32 @@
       "Overlay one or more timeseries from a relative time period. Expects relative time deltas in natural language (example:  24 hours, 7 days, 52 weeks, 365 days). Free text is supported.": [
         ""
       ],
-      "Calculation type": [""],
+      "Calculation type": ["Tipo de cálculo"],
       "How to display time shifts: as individual lines; as the absolute difference between the main time series and each time shift; as the percentage change; or as the ratio between series and time shifts.": [
         ""
       ],
       "Python functions": ["Probar Conexión"],
-      "Rule": [""],
+      "Rule": ["Regla"],
       "Pandas resample rule": ["Regla de Remuestra Pandas"],
-      "Method": [""],
+      "Method": ["Método"],
       "Pandas resample method": [""],
       "Favorites": ["Favoritos"],
       "Created content": ["Contenido Creado"],
       "Recent activity": ["Actividad Reciente"],
       "Security & Access": ["Seguridad & Acceso"],
-      "No charts": [""],
-      "No dashboards": [""],
+      "No charts": ["No gráficos"],
+      "No dashboards": ["No tableros"],
       "No favorite charts yet, go click on stars!": [
         "No hay gráficos favoritos aun, clica en la estrella!"
       ],
       "No favorite dashboards yet, go click on stars!": [
         "No hay dashboards favoritos aun, clica en la estrella!"
       ],
-      "Profile picture provided by Gravatar": [""],
+      "Profile picture provided by Gravatar": ["Foto de perfil proporcionado por Gravatar"],
       "joined": ["unido"],
       "id:": ["id:"],
       "There was an error fetching your recent activity:": [""],
-      "Deleted: %s": [""],
+      "Deleted: %s": ["Borrado: %s"],
       "There was an issue deleting: %s": [""],
       "There was an issue deleting %s: %s": [""],
       "report": ["Vista"],
@@ -1973,7 +1980,7 @@
       "Last run": ["Último cambio"],
       "Notification method": ["Capas de Anotación"],
       "Execution log": ["Registro Acciones"],
-      "Actions": [""],
+      "Actions": ["Acciones"],
       "Bulk select": ["Selección masiva"],
       "No %s yet": [""],
       "Created by": ["Creado el"],
@@ -1981,16 +1988,11 @@
         "Ha ocurrido un error cargando los CSS disponibles"
       ],
       "Status": ["Estado"],
-      "${AlertState.success}": [""],
-      "${AlertState.working}": [""],
-      "${AlertState.error}": [""],
-      "${AlertState.noop}": [""],
-      "${AlertState.grace}": [""],
       "Alerts & reports": ["Vista"],
       "Reports": ["Vista"],
       "This action will permanently delete %s.": [""],
-      "Delete %s?": ["Eliminar"],
-      "Please confirm": [""],
+      "Delete %s?": ["Eliminar %s?"],
+      "Please confirm": ["Por favir, confirmar"],
       "Are you sure you want to delete the selected %s?": [
         "¿Estas seguro de que quieres guardar y aplicar los cambios?"
       ],
@@ -2001,13 +2003,13 @@
       "== (Is equal)": [""],
       "!= (Is not equal)": [""],
       "Not null": [""],
-      "30 days": [""],
-      "60 days": [""],
-      "90 days": [""],
+      "30 days": ["30 días"],
+      "60 days": ["60 días"],
+      "90 days": ["90 días"],
       "Add notification method": [""],
       "Add delivery method": [""],
       "Recipients are separated by \",\" or \";\"": [""],
-      "Add": [""],
+      "Add": ["Añadir"],
       "Edit ${isReport ? 'Report' : 'Alert'}": [""],
       "Add ${isReport ? 'Report' : 'Alert'}": [""],
       "Report name": ["Nombre Plantilla"],
@@ -2025,7 +2027,7 @@
       "Message content": ["Contenido Creado"],
       "log": [""],
       "State": ["Estado"],
-      "Scheduled at": [""],
+      "Scheduled at": ["Agendar para"],
       "Start at": ["Hora Inicio"],
       "Duration": ["Configuración"],
       "Error message": ["Mensaje de Aviso"],
@@ -2130,7 +2132,7 @@
       "An error occurred while fetching dashboard created by values: %s": [
         "Ha ocurrido un error cargando los CSS disponibles"
       ],
-      "Unpublished": ["Publicado"],
+      "Unpublished": ["No Publicado"],
       "Are you sure you want to delete the selected dashboards?": [""],
       "Sorry, your browser does not support copying.": [
         "Lo sentimos, tu navegador no admite la copia. Utiliza Ctrl/Cmd + C!"
@@ -2257,7 +2259,7 @@
       "Success": ["Exitoso"],
       "Failed": ["Fallido"],
       "Running": ["Ejecutándose"],
-      "Offline": [""],
+      "Offline": ["Fuera de línea "],
       "Scheduled": ["Agendado"],
       "Duration: %s": ["Duración: %s"],
       "Tab name": ["Nombre Tabla"],
@@ -2267,10 +2269,10 @@
       "An error occurred while fetching database values: %s": [
         "Ha ocurrido un error cargando los CSS disponibles"
       ],
-      "Search by query text": [""],
+      "Search by query text": ["Buscar en el texto del query"],
       "Query preview": ["Previsualización de Datos"],
       "Previous": ["Previsualizar"],
-      "Next": [""],
+      "Next": ["Siguiente"],
       "Open in SQL Lab": ["Ejecutar en Laboratiorio SQL"],
       "User query": ["Ver querie"],
       "Executed query": ["¿Consulta vacía?"],
@@ -2292,7 +2294,7 @@
       "Created": ["Creado el"],
       "Viewed": ["Ver querie"],
       "Examples": ["Ver ejemplos"],
-      "Mine": [""],
+      "Mine": ["Creados por mí"],
       "Recently viewed charts, dashboards, and saved queries will appear here": [
         ""
       ],
@@ -2305,16 +2307,13 @@
       "Recently edited charts, dashboards, and saved queries will appear here": [
         ""
       ],
-      "${tableName\n                        .split('')\n                        .slice(0, tableName.length - 1)\n                        .join('')}\n                    ": [
-        ""
-      ],
-      "You don't have any favorites yet!": ["¡No tines nigún favorito aún!"],
+      "You don't have any favorites yet!": ["¡No tines ningún favorito aún!"],
       "SQL Lab queries": ["Vista de Laboratorio SQL"],
       "${tableName}": ["Nombre Tabla"],
       "query": ["Consulta"],
-      "Share": [""],
+      "Share": ["Compartir"],
       "Last run %s": [""],
-      "Recents": [""],
+      "Recents": ["Recientes"],
       "Select start and end date": ["Seleciona fecha de inicio y de fin"],
       "Type or Select [%s]": ["Escribe o Seleciona [%s]"],
       "Filter box": ["Caja de filtro"],
@@ -2334,7 +2333,7 @@
       "Check to include Druid granularity dropdown": [""],
       "Show Druid time origin": ["Mostrar Métrica Druid"],
       "Check to include time origin dropdown": ["Mostrar un filtro de tiempo"],
-      "Limit selector values": [""],
+      "Limit selector values": ["Limitar valores del selector"],
       "These filters apply to the values available in the dropdowns": [""],
       "Time-series Table": [""]
     }

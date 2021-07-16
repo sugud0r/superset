@@ -61,7 +61,7 @@ export default function EmptyState({ tableName, tab }: EmptyStateProps) {
       tableName === 'SAVED_QUERIES'
         ? t('saved queries')
         : t(`${tableName.toLowerCase()}`)
-    } yet`}</span>
+    } ${t(`yet`)}`}</span>
   );
   const recent = (
     <span className="no-recents">
@@ -138,7 +138,7 @@ export default function EmptyState({ tableName, tab }: EmptyStateProps) {
             window.location = favRedirects[tableName];
           }}
         >
-          See all{' '}
+          Ver todos(as) los(as){' '}
           {tableName === 'SAVED_QUERIES'
             ? t('SQL Lab queries')
             : t(`${tableName}`)}

@@ -50,7 +50,8 @@ services:
 
   superset:
     env_file: docker/.env
-    image: *superset-image
+    build: ./superset-hive
+    image: superset-hive
     container_name: superset_app
     command: ["/app/docker/docker-bootstrap.sh", "app"]
     restart: unless-stopped

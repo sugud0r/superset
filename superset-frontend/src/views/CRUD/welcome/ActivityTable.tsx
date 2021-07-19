@@ -141,11 +141,19 @@ const getEntityLastActionOn = (entity: ActivityObject) => {
 
   // for Recent viewed items
   if ('time_delta_humanized' in entity) {
-    return t(LAST_VIEWED, entity.time_delta_humanized);
+    // return t(LAST_VIEWED, entity.time_delta_humanized);
+    return t(
+      LAST_VIEWED,
+      entity.time_delta_humanized?.replace('days ago', 'días atrás'),
+    );
   }
 
   if ('changed_on_delta_humanized' in entity) {
-    return t(LAST_MODIFIED, entity.changed_on_delta_humanized);
+    // return t(LAST_MODIFIED, entity.changed_on_delta_humanized);
+    return t(
+      LAST_MODIFIED,
+      entity.changed_on_delta_humanized?.replace('days ago', 'días atrás'),
+    );
   }
 
   let time: number | string | undefined | null;

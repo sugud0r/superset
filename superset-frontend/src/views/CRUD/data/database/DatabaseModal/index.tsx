@@ -417,9 +417,9 @@ const DatabaseModal: FunctionComponent<DatabaseModalProps> = ({
             message={t('Additional fields may be required')}
             description={
               <>
-                {('Select databases require additional fields to be completed in' +
-                ' the Advanced tab to successfully connect the database. Learn' +
-                ' what requirements your databases has')}{' '}
+                {
+                  'Las bases de datos seleccionadas requieren que se completen campos adicionales en la pestaña Avanzado para conectar correctamente la base de datos. Conozca qué requisitos tienen sus bases de datos'
+                }{' '}
                 <a
                   href={DOCUMENTATION_LINK}
                   target="_blank"

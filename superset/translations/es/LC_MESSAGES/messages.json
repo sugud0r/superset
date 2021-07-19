@@ -52,7 +52,7 @@
       "CSS Templates": ["Plantillas CSS"],
       "Row level security": ["Filtros de seguridad a nivel de linea"],
       "Security": ["Seguridad"],
-      "Import Dashboards": ["Importar Dashboards"],
+      "Import Dashboards": ["Importar Tableros"],
       "SQL Editor": ["Editor SQL"],
       "SQL Lab": ["Visor SQL"],
       "Saved Queries": ["Consultas Guardadas"],
@@ -124,6 +124,14 @@
       "Please choose at least one metric": [
         "Por favor elige al menos una métrica"
       ],
+      "Whether to include the time granularity as defined in the time section": [
+        "Se debe incluir la granularidad de tiempo como se definió en la sección correspondiente  "
+      ],
+      "Include time": ["Incluir tiempo"],
+      "Enable server side pagination of results (experimental feature)": [
+        "Habilitar la paginación del lado del servidor (característica experimental)"
+      ],
+
       "Group By' and 'Columns' can't overlap": [""],
       "Treemap": ["Mapa de Arbol"],
       "Calendar Heatmap": ["Mapa de Calor del Calendario"],

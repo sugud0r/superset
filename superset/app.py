@@ -340,7 +340,7 @@ class SupersetAppInitializer:
         #
         appbuilder.add_link(
             "Import Dashboards",
-            label=__("Import Dashboards"),
+            label=__("Importar Tableros"),
             href="/superset/import_dashboards/",
             icon="fa-cloud-upload",
             category="Manage",

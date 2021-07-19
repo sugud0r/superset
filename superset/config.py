@@ -214,8 +214,8 @@ PROXY_FIX_CONFIG = {"x_for": 1, "x_proto": 1, "x_host": 1, "x_port": 1, "x_prefi
 # Uncomment to setup Your App name
 APP_NAME = "MasivAnálisis"
 
-# Uncomment to setup an App icon
-APP_ICON = "/static/assets/images/superset-logo-horiz.png"
+# Uncomment to setup an App icon6
+APP_ICON = "/static/assets/images/logo.svg"
 APP_ICON_WIDTH = 126
 
 # Uncomment to specify where clicking the logo would take the user
@@ -1187,6 +1187,11 @@ GLOBAL_ASYNC_QUERIES_JWT_SECRET = "test-secret-change-me"
 GLOBAL_ASYNC_QUERIES_TRANSPORT = "polling"
 GLOBAL_ASYNC_QUERIES_POLLING_DELAY = 500
 GLOBAL_ASYNC_QUERIES_WEBSOCKET_URL = "ws://127.0.0.1:8080/"
+
+RECAPTCHA_USE_SSL = False
+RECAPTCHA_PUBLIC_KEY = '6LcnOKgbAAAAAH6wH6MKPabEGwEjQfew9ztOpeNS'
+RECAPTCHA_PRIVATE_KEY = '6LcnOKgbAAAAAAKP8cwqC4feyVCi95HM21NJaP5f'
+RECAPTCHA_OPTIONS = {'theme': 'white'}
 
 # A SQL dataset health check. Note if enabled it is strongly advised that the callable
 # be memoized to aid with performance, i.e.,
